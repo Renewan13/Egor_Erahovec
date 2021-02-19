@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блоки</title>
+    <style>
+        legend {
+            font-weight: bold;
+        }
+        .navi {
+            width: 15em;
+            background-color: darkgrey;
+            float: left;
+        }
+        .statya {
+            background-color: grey;
+            margin-bottom: 2em;  
+            width: 100%;    
+            }
+        .podval {
+            clear: both;
+            background-color: mediumpurple;
+        }
+        .kartinka {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+ <div class="navi">
+     <ul><legend>Блок навигации</legend>
+         <li>Ширина 15em</li>
+         <li>Должен присутствовать цвет фона</li>
+         <li>Располагается слева</li>
+         <li>Блок навигации наполните контентом достаточным,
+             чтобы по высоте он начинал захватывать вторую статью,
+             как показано в данном привере.
+         </li>
+        </ul>
+ </div>   
+    
+ <div class="statya">
+     <ul>
+         <legend>Статья 1</legend>
+         Размер блока:<br>
+         Занимает всю доступную ширину<br>
+         Должен присутствовать цвет фона<br>
+         Во всех "статьях" сделайте отступ снизу от соседей равным 2em 
+         при помощи свойства margin-bottom
+     </ul>
+ </div>
+
+ <div class="statya" >
+    <ul>
+        <legend>Статья 2</legend>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным 2em <br>
+        при помощи свойства margin-bottom. Картинка вставлена при помощи тега,<br>
+        плавание организованно по правому краю внутри данной статьи для этой картинки.
+    </ul>
+ </div>
+
+ <div class="podval">
+     Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом<br>
+     Конец<br>
+ </div>
+ 
+ <div class="kartinka">
+    <img src="icon_mail.png">
+ </div>
+</body>
+</html>
