@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блоки Флекс</title>
+
     <style>
         .wrap {
             background-color: lightgray;
@@ -12,21 +13,12 @@
             width: 100%;
         }
         .navi {
-            width: 15em;
-            height: 300px;
             background-color: lightgreen;
+            width: 20em;
         }
         .statya {
-            width: auto;
             background-color: mediumseagreen;
-            margin-block-end: 3px;
-            padding: 5px;
-        }
-        .statya2 {
             width: auto;
-            background-color: mediumblue;
-            margin-block-end: 3px;
-            padding: 5px;
         }
         .podval {
             width: auto;
@@ -46,13 +38,11 @@
             flex-direction: row;
         }
         .flex-container-column > .navi {
-            flex: 0 1 200px;
+            flex-grow: 1;
+            
         }
         .flex-container-row > .statya {
-            margin-left: 15px;
-        }
-        .flex-container-row > .statya2 {
-            flex: 1 1 100px;
+            flex-grow: 1;
         }
         .flex-container-row > .podval {
             flex: auto;
@@ -74,7 +64,9 @@
          </li>
         </ul>
  </div>   
-    
+
+<div style="display: flex;">
+
  <div class="statya">
      <ul>
          <legend>Статья 1</legend>
@@ -86,7 +78,7 @@
      </ul>
  </div>
 
- <div class="statya2" >
+ <div class="statya" >
     <ul>
         <legend>Статья 2</legend>
         Размер блока:<br>
@@ -98,6 +90,10 @@
     </ul>
  </div>
 
+</div> 
+
+ </div>
+
  <div class="podval">
      Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом<br>
      Конец<br>
@@ -106,5 +102,6 @@
  <div class="kartinka">
     <img src="img/icon_mail.png">
  </div>
+
 </body>
 </html>
